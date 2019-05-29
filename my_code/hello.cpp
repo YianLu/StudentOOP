@@ -3,7 +3,7 @@
 
 using namespace std;
 
-// hello hello
+// hello hello...
 
 int sayHello() {
 	cout << "Hello World!" << endl;
