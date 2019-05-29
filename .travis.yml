@@ -11,6 +11,7 @@ script:
 notifications:
   email:
     recipients:
-      yl6259@nyu.edu
-      mm8348@nyu.edu
+      - yl6259@nyu.edu
+      - mm8348@nyu.edu
     on_success: always
+	on_failure: never
