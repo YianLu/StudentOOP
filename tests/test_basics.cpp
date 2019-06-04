@@ -2,7 +2,7 @@
 #include <iostream>
 #include <string>
 #include <vector>
-#include "basics.h"
+#include "../my_code/basics.h"
 
 using namespace std;
 
@@ -16,7 +16,6 @@ int main() {
 	inc_pass_ref(j);
 	cout << "j = " << j << endl;
 	// Put this assertion back once you've written code:
-	//...
 	// assert(j == 9);
 
 	int test_num = 10;
