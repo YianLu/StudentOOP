@@ -1,6 +1,5 @@
 #include <string>
 #include <vector>
-//...
 struct coord {
 	int x = 0;
 	int y = 0;
