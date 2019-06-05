@@ -1,12 +1,12 @@
 #include <cassert>
 #include <cassert>
 #include <iostream>
-#include "../my_code/pointers.h"
+#include "pointers.h"
+
 
 using namespace std;
 
 const int NUM_THINGS = 40;
-
 
 
 int main() {
