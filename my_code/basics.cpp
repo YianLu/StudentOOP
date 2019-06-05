@@ -8,6 +8,7 @@ using namespace std;
 
 /*
  * increment arg passed by copy
+ ..
  * */
 void inc_pass_copy(int j) {
 	j++;
@@ -79,9 +80,10 @@ int my_abs(int n) {
  * */
 int sum(int n) {
 	int total = 0;
-	int i = 0;
-	while (i <= n) {
+	int i = 1;
+	while (i < n) {
 		total+=i;
+		i++;
 	}
 	return total;
 }
@@ -91,7 +93,7 @@ int sum(int n) {
  * */
 int sum2(int n) {
 	int total = 0;
-	for (int i = 0; i <= n; i++) {
+	for (int i = 0; i < n; i++) {
 		total += i;
 	}
 	return total;
@@ -116,4 +118,3 @@ void pull_apart_string(std::string s) {
 	cout << endl;
 
 }
-
