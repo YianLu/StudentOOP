@@ -3,6 +3,7 @@
 #include <iostream>
 #include "../my_code/pointers.h"
 
+
 using namespace std;
 
 const int NUM_THINGS = 40;
