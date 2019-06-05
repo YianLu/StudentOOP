@@ -1,9 +1,9 @@
 #ifndef POINTERS_H
 #define POINTERS_H
 
+
 #include <string>
 #include <vector>
-
 
 void inc_by_value(int n);
 void inc_with_pointer(int* n);
