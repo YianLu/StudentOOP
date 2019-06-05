@@ -3,6 +3,7 @@
 
 using namespace std;
 
+
 void inc_by_value(int n) {
 	++n;
 }
