@@ -13,7 +13,7 @@ Weather::Weather(std::string nm, GPS loc) :
 }
 
 
-string Weather::get_name() const{
+string Weather::get_name() const {
 
 	return station_nm;
 }
@@ -26,8 +26,33 @@ void Weather::set_rating(int new_rating) {
 	rating = new_rating;
 }
 
+void Weather::add_reading(WReading wr) {
+	wreadings.push_back(wr);
+}
+
+Date::Date(int d, int m, int y): day(d), month(m), year(y){}
+ostream& operator <<(ostream& os, const Date& date) {
+	os << "the date is " << date.day << date.month << date.year << endl;
+	return os;
+}
+
+ostream& operator <<(ostream& os, const WReading& wr) {
+	os << "date is" << wr.date;
+	os << "temperature is " << wr.temperature << "humidity is " 
+		<< wr.humidity << "windspeed is " << wr.windspeed << endl;
+	return os;
+}
+
+ostream& operator <<(ostream& os, const GPS& gps) {
+	os << "the latitude is" << gps.latitude << "the longtitude is " << gps.longitude << endl;
+	return os;
+}
+
 ostream& operator <<(ostream& os, const Weather& w) {
-	int r = w.get_rating();
-	os << w.station_nm << "rating: " << r;
+	os << w.get_name() << ":rating " << w.get_rating() << "; " << w.my_loc << endl;
+	for (WReading wr : w.wreadings) {
+		os << "     " << wr << endl;
+	}
+
 	return os;
 }
