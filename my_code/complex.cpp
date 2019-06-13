@@ -1,6 +1,7 @@
 #include <iostream>
 #include <istream>
 #include <iomanip>
+#include <cmath>
 #include "complex.h"
 
 using namespace std;
