@@ -49,16 +49,12 @@ MyVec& MyVec::operator=(const MyVec& v2) {
  * */
 bool operator==(MyVec& v1, MyVec& v2) {
 	bool flag = true;
-	size_t i = 0;
+	
 	if (v1.size() == v2.size()) {
-		while ((flag == true) && (i<=v1.size())) {
-			if (v1[i] == v2[i]) {
-				i++;
-			}
-			else {
+		for (size_t i = 0; i < v1.size();i++) {
+			if (v1[i] != v2[i]) {
 				flag = false;
 			}
-
 		}
 	
 	}
