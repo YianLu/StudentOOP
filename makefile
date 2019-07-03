@@ -56,7 +56,7 @@ tests: test_hello test_basics test_pointers test_complex test_vector test_llist
 	tests/test_complex
 	tests/test_vector
 	tests/test_llist
-	tests/test_bst
+	tests/test_tvector
 
 prod: tests
 	- git commit -a -m "new assignment done"
