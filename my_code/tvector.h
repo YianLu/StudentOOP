@@ -99,7 +99,7 @@ private:
 	void copy(const MyVec& v2) {
 		sz = v2.sz;
 		capacity = v2.capacity;
-		data = new int[capacity];
+		data = new T[capacity];
 		for (int i = 0; i < sz; i++) {
 			data[i] = v2.data[i];
 		}
