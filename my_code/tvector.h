@@ -118,7 +118,7 @@ void print_vector(const MyVec<T>& v) {
 template <typename T>
 bool operator==(MyVec<T>& v1, MyVec<T>& v2) {
 	if (v1.size() == v2.size()) {
-		for (int i = 0; i <= v1.size(); i++) {
+		for (int i = 0; i < v1.size(); i++) {
 			if (v1[i] != v2[i]) {
 				return false;
 			}
