@@ -40,7 +40,7 @@ int main() {
 	assert(v2 == v3);
 	print_vector(v2);
 
-	for (int i = 0; i<v3.size();i++) {
+	for (int i = 0; i < v3.size(); i++) {
 		assert((v3[i] % 9) == 0);
 	}
 
